@@ -1,0 +1,496 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #00ee00; 
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #006400; 
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+p{
+    font-weight: 300;
+    color: #111;
+}
+
+.banner{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../images/banner.jpg);
+    background-size: cover;
+    opacity: 0.7;
+}
+
+.banner .content{
+    max-width: 900px;
+    text-align: center;
+}
+
+.banner .content h2{
+    font-size: 4em;
+    color: #000;
+}
+
+.banner .content p{
+    font-size: 1em;
+    color: #000;
+    font-weight: 600;
+}
+
+.btn{
+    font-size: 1em !important;
+    color: #fff !important;
+    background: #006400 !important;
+    display: inline-block !important;
+    padding: 10px 30px !important;
+    margin-top: 20px !important;
+    text-transform: uppercase !important;
+    text-decoration: none !important;
+    letter-spacing: 2px !important;
+    transition: 0.5s !important;
+}
+
+.btn:hover{
+    letter-spacing: 6px !important;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 10000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+}
+
+header.sticky{
+    background: #fff;
+    padding: 10px 100px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+header .logo{
+    color: #000;
+    font-weight: 700;
+    font-size: 2em;
+    text-decoration: none;
+}
+
+header.sticky .logo{
+    color: #111!important;
+}
+
+header .logo span{
+    color: #006400;
+}
+
+header .navigation {
+    position: relative;
+    display: flex;
+}
+
+
+header .navigation li{
+    list-style: none;
+    margin-left: 30px;
+}
+
+header .navigation li a{
+    text-decoration: none;
+    color: #000;
+    font-weight: 300;
+}
+
+header.sticky .navigation li a{
+    color: #111;
+}
+
+header .navigation li a:hover{
+    color: #006400;
+}
+
+section {
+    padding: 100px;
+}
+
+.row{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.row .col50{
+    position: relative;
+    width: 48%;
+}
+
+.titleText{
+    color: #111;
+    font-size: 2em;
+    font-weight: 300;
+}
+
+.titleText span{
+    color: #006400;
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
+.row .col50 .imgBx{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    /*min-height: 300px;*/
+}
+
+.row .col50 .imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.title{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.menu .content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.menu .content .box{
+    width: 340px;
+    margin: 20px;
+    border: 15px solid #fff;
+    box-shadow: 0 5px 35px rgba(0,0,0,0.08);
+}
+
+.menu .content .box .imgBx{
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+
+.menu .content .box .imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.menu .content .box .text{
+    padding: 15px 0 5px;
+}
+
+.menu .content .box .text h3{
+    font-weight: 400;
+    color: #111;
+}
+
+.team {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 5rem 20rem 5rem;
+}
+.cards-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 8rem;
+    width: 100%;
+}
+.card {
+    width: 20rem;
+    height: 30rem;
+    box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.4);
+    border-radius: 0.5rem;
+    position: relative;
+    margin-right: 5rem;
+    margin-left: 5rem;
+}
+.card-img-wrapper {
+    width: 100%;
+    height: 100%;
+    background-color: #262626;
+    border-radius: 0.5rem;
+}
+
+.card-img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+    border-radius: 0.5rem;
+    transition: opacity 0.3s;
+}
+.card:hover .card-img-wrapper img {
+    opacity: 0.5;
+}
+.card-info {
+    position: absolute;
+    bottom: 0;
+    padding: 2rem;
+    text-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.4);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s;
+}
+.card:hover .card-info {
+    bottom: 2rem;
+    opacity: 1;
+    visibility: visible;
+}
+.card-info h2 {
+    font-family: "Baloo Da 2", serif;
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    font-weight: 300;
+    color: #eee;
+}
+
+.card-info h3 {
+    font-family: "Muli", serif;
+    font-size: 2rem;
+    font-weight: 500;
+    color: #006400;
+    margin-bottom: 1rem;
+}
+.card-info p {
+    font-family: "Baloo da 2", serif;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    font-weight: 300;
+    color: #eee;
+    width: 80%;
+    margin-bottom: 2rem;
+}
+.card-info button {
+    width: 10rem;
+    height: 3rem;
+    background-color: #c29525;
+    border: none;
+    font-family: "Baloo Da 2", serif;
+    font-size: 1.4rem;
+    line-height: 1.5rem;
+    color: #eee;
+    border-radius: 0.3rem;
+    box-shadow: 0 0.1rem 0.8rem rgba(0, 0, 0, 0.4);
+}
+
+.owl-carousel {
+	.owl-stage {
+		display: flex;
+	}
+	.owl-item {
+		display: flex;
+		flex: 1 0 auto;
+	}
+	.caption {
+		display: flex;
+		flex: 1 0 auto;
+		flex-direction: column;
+	}
+	.flex-text {
+		flex-grow: 1
+	}
+	.thumbnail {
+		display: flex;
+		flex-direction: column;
+		margin: 0 15px;
+	}
+}
+
+.copyrightText{
+    padding: 8px 40px;
+    border-top: 1px solid rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.copyrightText p{
+    color: #333;
+}
+
+.copyrightText span{
+    color: #006400;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+@media (max-width: 1500px){
+  .card {
+    width: 18rem;
+  }
+}
+
+@media (max-width: 1300px){
+  .cards-wrapper {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4rem;
+  }
+  .card {
+    margin-bottom: 8rem;
+  }
+}
+
+@media (max-width: 991px){
+    header, header.sticky {
+        padding: 10px 20px;
+    }
+
+    header .navigation{
+        display: none;
+    }
+
+    header .navigation.active{
+        width: 100%;
+        height: calc(100% - 68px);
+        position: fixed;
+        top: 68px;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: #fff;
+    }
+
+    header .navigation li{
+        margin-left: 0;
+    }
+
+    header .navigation li a{
+        color: #111;
+        font-size: 1.6em;
+    }
+    
+    .menuToggle{
+        position: relative;
+        width: 40px;
+        height: 40px;
+        background: url(../images/menu.png);
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+    }
+
+    .menuToggle.active{
+        background: url(../images/close.png);
+        background-size: 25px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    header.sticky .menuToggle{
+        filter: invert(1);
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    .banner .content h2{
+        font-size: 3em;
+        color: #000;
+    }
+
+    .row{
+        flex-direction: column;
+    }
+
+    .row .col50{
+        position: relative;
+        width: 100%;
+    }
+
+    .row .col50 .imgBx{
+        height: 300px;
+        margin-top: 20px;
+    }
+
+    .menu .content{
+        margin-top: 20px;
+    }
+
+    .menu .content .box{
+        margin: 10px;
+    }
+
+    .menu .content .box .imgBx{
+        height: 260px;
+    }
+
+    .title{
+        text-align: center;
+    }
+
+    .titleText{
+        font-size: 1.8em;
+        line-height: 1.5em;
+        margin-bottom: 15px;
+        font-weight: 300;
+    }
+
+    .testimonials .content .box{
+        margin: 10px;
+        padding: 20px;
+    }
+
+    .contactForm{
+        padding: 35px 40px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .banner .content h2{
+        font-size: 2.2em;
+        color: #000;
+    }
+}
