@@ -30,6 +30,7 @@ html {
     scroll-behavior: smooth;
 }
 
+
 p{
     font-weight: 300;
     color: #111;
@@ -42,7 +43,7 @@ p{
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url(../images/banner.jpg);
+    background: url(../images/banner-2.jpg);
     background-size: cover;
     opacity: 0.7;
 }
